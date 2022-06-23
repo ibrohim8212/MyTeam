@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* livvic-600 - latin */
 @font-face {
   font-family: 'Livvic';
@@ -32,7 +39,7 @@
 
 *{
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body{
@@ -65,11 +72,11 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header-pages{
@@ -77,14 +84,23 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo{
   display: block;
   width: 160px;
   height: 40px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.logo:hover{
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .header-ul{
@@ -117,7 +133,11 @@ body{
   line-height: 28px;  
 }
 
-.header-span{
+
+
+
+
+.header-href-end{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,29 +146,11 @@ body{
   width: 153px;
   height: 43px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header-span:hover{
-  color: #fff;
-  background-color: #fff;
-  border: 2px solid #FFFFFF;
-  border-radius: 24px;
-  width: 153px;
-  height: 43px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.header-href-end{
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #fff;
   text-decoration: none;
   font-style: normal;
@@ -158,6 +160,20 @@ body{
 }
 
 .header-href-end:hover{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+  width: 153px;
+  height: 43px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #002529;
   text-decoration: none;
   font-style: normal;
@@ -174,7 +190,7 @@ body{
   padding-bottom: 250px;
   background-image: url(../optimal/shar-ong-yarm.png), url(../optimal/pas-qizil-kok.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(50% - 710px) calc(50% + -68px), calc(50% + 389px) calc(50% + 312px);
+  background-position: calc(50% - 760px) calc(50% + -68px), calc(50% + 389px) calc(50% + 312px);
 }
 
 .header-top-div{
@@ -182,11 +198,11 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header-top-h1{
@@ -223,7 +239,7 @@ body{
   background-color: #012F34;
   background-image: url(../optimal/shar-chap.png);
   background-repeat: no-repeat;
-  background-position: calc(50% + 710px) bottom;
+  background-position: calc(50% + 760px) bottom;
 }
 
 
@@ -300,7 +316,7 @@ body{
   background-color: #004047;
   background-image: url(../optimal/blue-lines.png), url(../optimal/shar-tepa-kok.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(50% - 686px) calc(50% - 344px), calc(50% + 660px) bottom;
+  background-position: calc(50% - 686px) calc(50% - 344px), calc(50% + 660px) calc(50% + 395px);
 }
 
 .right-h2{
@@ -364,10 +380,10 @@ body{
 .header-bottom{
   padding-bottom: 84px;
   padding-top: 84px;
-  background-color: #F67E7E;
+  background-color: #f67e7E;
   background-image: url(../optimal/shar-tepa-qizil.png);
   background-repeat: no-repeat;
-  background-position: calc(50% - 660px), bottom;
+  background-position: calc(50% - 660px) calc(50% + 126px);
 }
 
 .bottom-div{
@@ -375,37 +391,43 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .bottom-h2{
+  margin-left: 95px;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
 }
 
-.bottom-span{
+
+.bottom-href{
+  margin-left: auto;
+  margin-right: auto;
   width: 153px;
   height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
   border: 2px solid #012F34;
   border-radius: 24px;
+  text-decoration: none;
+  color: #000;
+  align-items: center;
 }
 
-.bottom-span:hover{
+.bottom-href:hover{
   background-color: #012F34;
   width: 153px;
   height: 48px;
@@ -413,21 +435,13 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 2px solid #012F34;
   border-radius: 24px;
-}
-
-.bottom-href{
-  text-decoration: none;
-  color: #000;
-}
-
-.bottom-href:hover{
   text-decoration: none;
   color: #fff;
 }
@@ -448,8 +462,8 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 
@@ -525,11 +539,10 @@ body{
 
 .about-top{
   background-color: #014e56;
-  /* padding-top: 139px; */
   padding-bottom: 250px;
   background-image: url(../optimal/shar-chap-qizil.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: calc(50% + 690px) bottom;
 }
 
 .about-top-p{
@@ -551,7 +564,7 @@ body{
   background-color: #004047;
   background-image: url(../optimal/sar-ong-kok-qizil.png), url(../optimal/blue-lines.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: left top, right bottom;
+  background-position: calc(50% - 759px) calc(50% - 466px), right bottom;
 }
 
 .about-left-ul{
@@ -561,7 +574,7 @@ body{
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .about-left-li{
@@ -593,11 +606,11 @@ body{
   height: 56px;
   border-radius: 50%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about-left-p{
@@ -614,8 +627,8 @@ body{
   height: 4px;
   background-color: #000;
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .about-left-span:hover{
@@ -629,14 +642,14 @@ body{
   height: 56px;
   border-radius: 50%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 
@@ -651,14 +664,14 @@ body{
   height: 56px;
   border-radius: 50%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 
@@ -673,14 +686,14 @@ body{
   height: 56px;
   border-radius: 50%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .about-left-span-end:hover{
@@ -694,11 +707,11 @@ body{
   height: 56px;
   border-radius: 50%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 
@@ -733,8 +746,8 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -748,12 +761,12 @@ body{
 
 
 .contact-top{
-  padding-bottom: 120px;
+  padding-bottom: 222px;
   padding-top: 5px;
   background-color: #014E56;
   background-image: url(../optimal/sar-ong-kok-qizil.png), url(../optimal/qizil-chap.png);
   background-repeat: no-repeat;
-  background-position: top left, right bottom;
+  background-position: calc(50% - 759px) calc(50% - 149px), calc(50% + 759px) bottom;
   
 }
 
@@ -762,13 +775,15 @@ body{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   
 }
 
-.contact-top-text{
+.contact-top-text {
+  margin-left: auto;
   width: 540px;
+  margin-right: auto;
 }
 
 .top-h2{
@@ -810,6 +825,8 @@ body{
 
 
 .form{
+  margin-left: auto;
+  margin-right: auto;
   width: 540px;
   height: 348px;
 }
@@ -833,12 +850,88 @@ body{
 }
 
 .button{
+  display: block;
   width: 123px;
   height: 48px;
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 24px;
   color: #004047;
+}
+
+
+
+@media screen and (max-width:1428px){
+  .about-left{
+    background-position: calc(50% - 714px) calc(50% - 466px), right bottom;
+  }
+  
+  
+  
+  .contact-top{
+    background-position: calc(50% - 714px) calc(50% - 149px), calc(50% + 716px) bottom;
+  }
+}
+
+
+@media screen and (max-width:1337px){
+  .about-left {
+    background-position: calc(50% - 668px) calc(50% - 466px), right bottom;
+  }
+  
+  
+  
+  .contact-top {
+    background-position: calc(50% - 669px) calc(50% - 149px), calc(50% + 667px) bottom;
+  }
+}
+
+
+@media screen and (max-width:1318px){
+  .header-left{
+    background-position: calc(50% + 658px) calc(50% + 244px);
+  } 
+  
+  
+  
+  
+  .header-bottom{
+    background-position: calc(50% - 560px) calc(50% + 126px);
+  }
+}
+
+@media screen and (max-width:1242px){
+  .about-left {
+    background-position: calc(50% - 621px) calc(50% - 466px), right bottom;
+  }
+}
+
+@media screen and (max-width:1224px){
+  
+  
+  .header-right {
+    
+    background-position: calc(50% - 539px) calc(50% - 345px), calc(50% + 511px) calc(50% + 395px);
+  }
+  
+}
+
+@media screen and (max-width:1215px){
+  .header-bottom {
+    background-position: calc(50% - 508px) calc(50% + 126px);
+  }
+}
+
+@media screen and (max-width:1180px){
+  .about-top{
+    background-position: calc(50% + 591px) bottom;
+  }
+}
+
+@media screen and (max-width:1150px){
+  .about-left {
+    background-position: calc(50% - 575px) calc(50% - 466px), right bottom;
+  }
 }
 
 @media screen and (max-width:1135px){
@@ -849,14 +942,14 @@ body{
     display: none;
   }
   
-  .about-left{
-    background-position: top left, right bottom;
+  .about-left {
+    background-position: calc(50% - 575px) calc(50% - 466px), right bottom;
   }
   
   .about-left-ul{
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   
   .about-left-li{
@@ -886,7 +979,23 @@ body{
   }
 }
 
-@media screen and (max-width:1024px){
+
+
+@media screen and (max-width:1109px){
+  .header-bottom {
+    background-position: calc(50% - 454px) calc(50% + 126px);
+  }
+}
+
+
+@media screen and (max-width:1058px){
+  .about-left {
+    background-position: calc(50% - 529px) calc(50% - 466px), right bottom;
+  }
+}
+
+
+@media screen and (max-width:1025px){
   .container{
     max-width: 769px;
     margin-left: auto;
@@ -913,7 +1022,7 @@ body{
   .header-top{
     background-image: url(../optimal/pas-qizil-kok.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: calc(50% - 32px) calc(50% + 339px);
   }
   
   .header-top-div{
@@ -925,8 +1034,8 @@ body{
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
     
   }
@@ -946,7 +1055,7 @@ body{
   .header-left{
     padding-bottom: 100px;
     padding-top: 100px;
-    background-position: right top;
+    background-position: calc(50% + 507px) calc(50% - 255px);
   }
   
   
@@ -971,6 +1080,13 @@ body{
   }
   
   /* Delivering real results for top companies. Some of our success stories. */
+  .header-right {
+    
+    background-position: calc(50% - 439px) calc(50% - 674px), calc(50% + 412px) calc(50% + 724px);
+  }
+  
+  
+  
   
   .right-h2{
     font-style: normal;
@@ -997,13 +1113,23 @@ body{
     height: 75px;
   }
   
-  /* Ready to get started? */
   
-  .header-bottom{
-    background-image: url(../optimal/shar-tepa-qizil.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
+  
+  
+  
+  
+  .header-bottom {
+    background-position: calc(50% - 402px) calc(50% + 126px);
   }
+  
+  
+  .bottom-h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 95px;
+  }
+  
+  
   
   /* footer */
   
@@ -1019,15 +1145,28 @@ body{
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
   }
+  
+  
+  
+  
+  
+  .about-left {
+    background-position: calc(50% - 512px) calc(50% - 617px), right bottom;
+  }
+  
+  
   
   /* contact */
   
+  .contact-top {
+    background-position: calc(50% - 512px) calc(50% - 313px), calc(50% + 515px) bottom;
+  }
   
   .contact-top-div{
     display: block;
@@ -1035,6 +1174,66 @@ body{
   }
   
 }
+
+@media screen and (max-width:986px){
+  .about-top {
+    background-position: calc(50% + 492px) bottom;
+  }
+}
+
+@media screen and (max-width:931px){
+  .about-left {
+    background-position: calc(50% - 465px) calc(50% - 617px), right bottom;
+  }
+}
+
+@media screen and (max-width:922px){
+  .header-left{
+    background-position: calc(50% + 460px) calc(50% - 255px);
+  }
+  
+  
+  
+  .contact-top {
+    background-position: calc(50% - 462px) calc(50% - 313px), calc(50% + 458px) bottom;
+  }
+}
+
+
+
+@media screen and (max-width:900px){
+  .header-bottom {
+    background-position: calc(50% - 350px) calc(50% + 126px);
+  }
+}
+
+
+
+@media screen and (max-width:840px){
+  .about-left {
+    background-position: calc(50% - 420px) calc(50% - 617px), right bottom;
+  }
+}
+
+@media screen and (max-width:829px){
+  .header-left {
+    background-position: calc(50% + 414px) calc(50% - 255px);
+  }
+}
+
+@media screen and (max-width:815px){
+  .header-left{
+    background-position: calc(50% + 407px) calc(50% - 255px);
+  }
+}
+
+
+@media screen and (max-width:787px){
+  .about-top {
+    background-position: calc(50% + 393px) bottom;
+  }
+}
+
 
 @media screen and (max-width:770px){
   
@@ -1064,7 +1263,7 @@ body{
   .header-top{
     background-image: url(../optimal/pas-qizil-kok.png);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: calc(50% - 18px) calc(50% + 343px);
   }
   
   .header-top-div{
@@ -1076,8 +1275,8 @@ body{
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     text-align: center;
     
   }
@@ -1097,7 +1296,7 @@ body{
   .header-left{
     padding-bottom: 100px;
     padding-top: 100px;
-    background-position: right top;
+    background-position: calc(50% + 385px) calc(50% - 255px);
   }
   
   
@@ -1124,11 +1323,13 @@ body{
   /* Delivering real results for top companies. Some of our success stories. */
   
   
-  .header-right{
-    background-image: url(../optimal/blue-lines.png), url(../optimal/shar-tepa-kok.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left top, right bottom;
+  .header-right {
+    background-position: calc(50% - 312px) calc(50% - 674px), calc(50% + 287px) calc(50% + 724px);
   }
+  
+  
+  
+  
   
   
   .right-h2{
@@ -1157,28 +1358,34 @@ body{
   }
   
   
+  
+  .header-bottom {
+    background-position: calc(50% - 285px) calc(50% + 126px);
+  }
+  
+  
   .footer-href:nth-child(3n){
     margin-left: 24px;
   }
   
   /* about */
   
-  .about-top{
-    background-position: right bottom;
+  .about-top {
+    background-position: calc(50% + 385px) bottom;
   }
   
   .line-red{
     display: none;
   }
   
-  .about-left{
-    background-position: calc(50% - 139px) calc(50% - 1218px), calc(50% + 114px) calc(50% + 1167px);
+  .about-left {
+    background-position: calc(50% - 378px) calc(50% - 617px), right bottom;
   }
   
   .about-left-ul{
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   
   .about-left-li{
@@ -1193,36 +1400,58 @@ body{
   
   
   .about-right{
-    background-position: top left;
+    background-position: left calc(50% - 245px);
   }
   
   
   .about-right-img-1{
     width: 103px;
+    margin-top: 64px;
   }
   
   .about-right-img-2{
+    margin-top: 67px;
     width: 114px;
   }
   
+  .about-right-img-3{
+    margin-top: 67px;
+  }
+  
   .about-right-img-4{
+    margin-top: 67px;
     width: 103px;
   }
   .about-right-img-5{
+    margin-top: 67px;
     width: 61px;
+  }
+  
+  
+  
+  
+  .contact-top {
+    background-position: calc(50% - 385px) calc(50% - 374px), calc(50% + 388px) bottom;
   }
 }
 
 
 @media screen and (max-width:700px){
   
-  .about-right{
-    background-position: top left;
+  
+  .about-top {
+    background-position: calc(50% + 349px) calc(50% + 223px);
   }
   
   
-  .about-left{
-    background-position: top left;
+  .about-right {
+    background-position: left calc(50% - 350px);
+  }
+  
+  
+  
+  .about-left {
+    background-position: calc(50% - 350px) calc(50% - 1101px), right bottom;
   }
   
   .about-right-ul{ 
@@ -1256,7 +1485,19 @@ body{
 
 
 @media screen and (max-width:688px){
+  
+  .header-left{
+    background-position: calc(50% + 344px) calc(50% - 255px);
+  }
+  
+  
   /* Delivering real results for top companies. Some of our success stories. */
+  
+  .header-right{
+    background-position: calc(50% - 268px) calc(50% - 690px), calc(50% + 244px) calc(50% + 740px);
+  }
+  
+  
   
   .right-h2{
     margin-left: 0;
@@ -1273,17 +1514,118 @@ body{
   .right-p{
     width: 327px;
     height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media screen and (max-width:663px){
+  .header-bottom {
+    background-position: calc(50% - 232px) calc(50% + 126px);
   }
 }
 
 
 @media screen and (max-width:654px){
-  .contact-top{
+  .contact-top {
     background-image: url(../optimal/qizil-chap.png);
-    background-position: calc(50% + 276px) calc(50% + 512px);
+    background-position: calc(50% + 322px) calc(50% + 568px);
   }
 }
 
+
+@media screen and (max-width:605px){
+  .bottom-h2{
+    margin-left: 0;
+  }
+  
+  
+  .about-left {
+    background-position: calc(50% - 304px) calc(50% - 1117px), right bottom;
+  }
+}
+
+
+@media screen and (max-width:584px){
+  /* Build & manage distributed teams like no one else. */
+  
+  .header-left{
+    background-position: calc(50% + 292px) calc(50% - 390px);
+  }
+  
+  
+  .left-h2{
+    width: 240px;
+    height: 160px;
+  }
+  
+  .left-li{
+    margin-left: 120px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 327px;
+    height: 199px;
+    background-position: calc(50% + 17px) calc(50% - 29px);
+    background-size: 215px 436px;
+  }
+  
+  .left-img{
+    margin: 0;
+  }
+  
+  
+  .left-text{
+    text-align: center;
+  }
+  
+  .left-p{
+    width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-top-p{
+    width: 327px;
+    height: 196px;
+  }
+  
+  
+  .about-left-li{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-left-li:nth-child(3n){
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .header-right {
+    background-position: calc(50% - 217px) calc(50% - 689px), calc(50% + 192px) calc(50% + 741px);
+  }
+  
+}
+
+
+@media screen and (max-width:560px){
+  
+  .header-bottom {
+    background-position: calc(50% - 180px) calc(50% + 129px);
+  }
+  
+  
+  .bottom-div {
+    display: block;
+    text-align: center;
+  }
+}
 
 @media screen and (max-width:550px){
   
@@ -1303,16 +1645,20 @@ body{
     
   }
   
-  .clontact-top-li{
+  .clontact-top-li {
+    margin-left: auto;
     width: 327px;
     height: 72px;
     background-position: calc(50% - 451px), calc(50% - 100px);
     background-size: 336px 424px;
+    margin-right: auto;
   }
   
-  .form{
-    width: 327px;
-    height: 420px;
+  .form {
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    height: auto;
   }
   
   .contact-imput{
@@ -1323,6 +1669,15 @@ body{
     width: 325px;
   }
 }
+
+
+
+@media screen and (max-width:534px){
+  .contact-top{
+    background-position: calc(50% + 273px) calc(50% + 609px);
+  }
+}
+
 
 @media screen and (max-width:519px){
   .logo{
@@ -1345,10 +1700,19 @@ body{
   
   
   
-  .header-span{
+  .header-href-end{
     display: none;
   }
   
+  
+  
+  
+  
+  
+  
+  .header-top {
+    background-position: calc(50% - 0px) calc(50% + 270px);
+  }
   
   .header-top-h1{
     font-style: normal;
@@ -1372,13 +1736,15 @@ body{
   }
   
   .left-li{
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 327px;
     height: 199px;
     background-position: calc(50% + 17px) calc(50% - 29px);
@@ -1398,6 +1764,20 @@ body{
     width: 327px;
   }
   
+  
+  .header-right {
+    background-position: calc(50% - 185px) calc(50% - 689px), calc(50% + 160px) calc(50% + 740px);
+  }
+  
+  
+  
+  
+  
+  .about-top {
+    background-position: calc(50% + 259px) calc(50% + 173px);
+  }
+  
+  
   .about-top-p{
     width: 327px;
     height: 196px;
@@ -1416,59 +1796,42 @@ body{
 }
 
 
-@media screen and (max-width:584px){
-  /* Build & manage distributed teams like no one else. */
-  
-  .left-h2{
-    width: 240px;
-    height: 160px;
+@media screen and (max-width:514px){
+  .about-left {
+    background-position: calc(50% - 257px) calc(50% - 1118px), right bottom;
   }
+  
+  
+  
+  
+  .form{
+    width: auto;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width:493px){
+  .header-left {
+    background-position: calc(50% + 246px) calc(50% - 390px);
+  }
+}
+
+@media screen and (max-width:460px){
+  
+  .header-top {
+    background-position: calc(50% - 0px) calc(50% + 270px);
+  }
+  
+  
+  
   
   .left-li{
-    margin-left: 62px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 327px;
-    height: 199px;
-    background-position: calc(50% + 17px) calc(50% - 29px);
-    background-size: 215px 436px;
-  }
-  
-  .left-img{
-    margin: 0;
-  }
-  
-  
-  .left-text{
-    text-align: center;
-  }
-  
-  .left-p{
-    width: 327px;
-  }
-  
-  .about-top-p{
-    width: 327px;
-    height: 196px;
-  }
-  
-  
-  .about-left-li{
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .about-left-li:nth-child(3n){
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
 }
+
 
 @media screen and (max-width:443px){
   .logo{
@@ -1491,8 +1854,8 @@ body{
   
   
   
-  .header-span{
-    display: none;
+  .header-top {
+    background-position: calc(50% - 0px) calc(50% + 270px);
   }
   
   
@@ -1518,14 +1881,15 @@ body{
   }
   
   .left-li{
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 327px;
     height: 199px;
     background-position: calc(50% + 17px) calc(50% - 29px);
@@ -1563,10 +1927,31 @@ body{
     padding: 0;
   }
   
-  .right-p{
-    margin: 0;
-    width: 327px;
-    height: 100px;
+  
+  
+  
+  .bottom-div{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:423px){
+  .about-left {
+    background-position: calc(50% - 211px) calc(50% - 1118px), right bottom;
+  }
+}
+
+
+@media screen and (max-width:431px){
+  .contact-top {
+    background-position: calc(50% + 216px) calc(50% + 609px);
+  }
+}
+
+@media screen and (max-width:390px){
+  .header-left {
+    background-position: calc(50% + 195px) calc(50% - 392px);
   }
 }
 
@@ -1591,8 +1976,10 @@ body{
   
   
   
-  .header-span{
-    display: none;
+  
+  
+  .header-top {
+    background-position: calc(50% - 0px) calc(50% + 270px);
   }
   
   
@@ -1612,6 +1999,11 @@ body{
   
   /* Build & manage distributed teams like no one else. */
   
+  .header-left {
+    background-position: calc(50% + 187px) calc(50% - 407px);
+  }
+  
+  
   .left-h2{
     width: 240px;
     height: 160px;
@@ -1621,11 +2013,11 @@ body{
     margin: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 327px;
     height: 199px;
     background-position: calc(50% + 17px) calc(50% - 29px);
@@ -1650,7 +2042,7 @@ body{
   .header-right{
     background-image: url(../optimal/blue-lines.png), url(../optimal/shar-tepa-kok.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: calc(50% - 113px) calc(50% - 605px), calc(50% + 87px) bottom;
+    background-position: calc(50% - 113px) calc(50% - 690px), calc(50% + 87px) calc(50% + 740px);
   }
   
   .right-h2{
@@ -1668,7 +2060,6 @@ body{
   }
   
   .right-p{
-    margin: 0;
     width: 327px;
     height: 100px;
   }
@@ -1678,7 +2069,12 @@ body{
   /* Ready to get started? */
   
   
+  .header-bottom {
+    background-position: calc(50% - 78px) calc(50% + 186px);
+  }
+  
   .bottom-div{
+    padding-bottom: 83px;
     display: block;
     text-align: center;
   }
@@ -1726,8 +2122,8 @@ body{
   /* about */
   
   
-  .about-top{
-    background-position: calc(50% + 137px) calc(50% + 273px);
+  .about-top {
+    background-position: calc(50% + 182px) calc(50% + 273px);
   }
   
   
@@ -1747,6 +2143,13 @@ body{
   .about-right-ul{
     display: block;
     text-align: center;
+  }
+  
+  
+  
+  
+  .contact-top {
+    background-position: calc(50% + 195px) calc(50% + 609px);
   }
   
 }
